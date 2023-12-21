@@ -33,7 +33,7 @@ const TaskForm = ({ data }: { data: DataType }) => {
         />
       </div>
       <div className="" onClick={handleClick}>
-        <SubmitButton className="bg-blue-400 md:w-[6rem] w-full md:text-md text-sm">
+        <SubmitButton className="bg-blue-400 w-[6rem] md:text-md text-sm">
           Add todo
         </SubmitButton>
       </div>
