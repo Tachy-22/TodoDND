@@ -21,7 +21,7 @@ const TaskForm = ({ data }: { data: DataType }) => {
         }
         console.log("passed here");
       }}
-      className="flex gap-1 justify-center h-fit  items-center"
+      className="flex md:gap-1 gap-[0.1rem]  justify-center h-fit  items-center"
     >
       <div className=" px-3 ">
         <label htmlFor="task" className="" />
@@ -33,7 +33,9 @@ const TaskForm = ({ data }: { data: DataType }) => {
         />
       </div>
       <div className="" onClick={handleClick}>
-        <SubmitButton className="bg-blue-400 md:w-[6rem] w-full">Add todo</SubmitButton>
+        <SubmitButton className="bg-blue-400 md:w-[6rem] w-full md:text-md text-sm">
+          Add todo
+        </SubmitButton>
       </div>
     </form>
   );
