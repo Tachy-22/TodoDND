@@ -12,7 +12,7 @@ const List = async () => {
 
 //  console.log("user list update:", user);
   return (
-    <div className="bg-rd-400 w-[45rem] ">
+    <div className="bg-rd-400 w-full px-2 md:w-[45rem] ">
       <TaskList initialData={user} />
     </div>
   );

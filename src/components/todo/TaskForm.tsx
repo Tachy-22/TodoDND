@@ -23,17 +23,17 @@ const TaskForm = ({ data }: { data: DataType }) => {
       }}
       className="flex gap-1 justify-center h-fit  items-center"
     >
-      <div className=" ">
+      <div className=" px-3 ">
         <label htmlFor="task" className="" />
         <input
           type="text"
-          className="text border rounded-md p-2 px-3 w-[35rem] outline-none bg-white"
+          className="text border rounded-md p-2 px-3 md:w-[35rem] w-full outline-none bg-white"
           name="task"
           id="task"
         />
       </div>
       <div className="" onClick={handleClick}>
-        <SubmitButton className="bg-blue-400 w-[6rem]">Add todo</SubmitButton>
+        <SubmitButton className="bg-blue-400 md:w-[6rem] w-full">Add todo</SubmitButton>
       </div>
     </form>
   );

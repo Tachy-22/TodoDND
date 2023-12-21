@@ -34,7 +34,7 @@ const Task = ({
             className=""
           >
             <SubmitButton className="text-red-500  p-1 hover:bg-red-300/30">
-              <RiDeleteBin6Line className="text-xl" />
+              <RiDeleteBin6Line className="text-xl text-red-500" />
             </SubmitButton>
           </form>
         </div>

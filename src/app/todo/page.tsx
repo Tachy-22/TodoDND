@@ -24,8 +24,10 @@ const TodoRouteMemo = async () => {
    console.log("ran memoised todo page ");
   return (
     <div className=" p-3  w-full h-full justify-center flex flex-col items-center">
-      <div className="uppercase p-[1rem] text-3xl font-bold text-yellow-400">
-        <h1 className="text-3xl font-bold">My Todo DRAG N` DROP</h1>
+      <div className="uppercase pb-0 p-[1rem] md:text-3xl text-xl font-bold text-blue-900 text-center">
+        <h1 className="md:text-3xl text-center font-bold">
+          My Todo DRAG N` DROP
+        </h1>
       </div>
     </div>
   );
