@@ -1,11 +1,7 @@
 "use client";
-import {
-  FiEdit,
-  FiTrash,
-  FiShare,
-  FiPlusSquare,
-  FiChevronsDown,
-} from "react-icons/fi";
+
+import { FaHome, FaAngleDown } from "react-icons/fa";
+import { LuListTodo } from "react-icons/lu";
 import { motion } from "framer-motion";
 import { Dispatch, SetStateAction, useState } from "react";
 import { IconType } from "react-icons";
@@ -24,7 +20,7 @@ const DropDown = () => {
         >
           <span className="font-medium text-sm">Menu</span>
           <motion.span variants={iconVariants}>
-            <FiChevronsDown />
+            <FaAngleDown  />
           </motion.span>
         </button>
 
@@ -34,10 +30,10 @@ const DropDown = () => {
           style={{ originY: "top", translateX: "-50%" }}
           className="flex flex-col bg-white gap-2 p-2 rounded-lg shadow-xl absolute z-20 top-[120%] left-[50%] w-48 overflow-hidden"
         >
-          <Option href="/" setOpen={setOpen} Icon={FiEdit}>
+          <Option href="/" setOpen={setOpen} Icon={FaHome}>
             home
           </Option>
-          <Option href="/todo" setOpen={setOpen} Icon={FiPlusSquare}>
+          <Option href="/todo" setOpen={setOpen} Icon={LuListTodo}>
             {" "}
             todos
           </Option>
