@@ -1,9 +1,13 @@
 import React from 'react'
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
 const loading = () => {
   return (
-    <div>loading taskform ...</div>
-  )
+    <div>
+      <Skeleton height={40} />
+    </div>
+  );
 }
 
 export default loading
